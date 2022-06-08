@@ -18,7 +18,7 @@ namespace NoMercyClient
 
             BattleStats statsChar1 = SetStandartStats(char1);
             BattleStats statsChar2 = SetStandartStats(char2);
-            while (statsChar1.Health > 0 || statsChar2.Health > 0)
+            while (statsChar1.Health > 0 && statsChar2.Health > 0)
             {
                 Strife(statsChar1, statsChar2, char1);
                 Strife(statsChar2, statsChar1, char2);
@@ -88,17 +88,17 @@ namespace NoMercyClient
             switch (character.Class)
             {
                 case "bloodletter":
-                    stats.Damage = 5;
+                    stats.Damage = 8;
                     stats.Defence = 2;
                     stats.Health = 15;
                     break;
                 case "priest":
-                    stats.Damage = 4;
+                    stats.Damage = 6;
                     stats.Defence = 2;
                     stats.Health = 15;
                     break;
                 case "protector":
-                    stats.Damage = 4;
+                    stats.Damage = 6;
                     stats.Defence = 2;
                     stats.Health = 25;
                     break;

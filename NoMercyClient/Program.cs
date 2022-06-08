@@ -6,8 +6,11 @@ namespace NoMercyClient
     {
         static void Main()
         {
-            Authorization.RequestAuthorisation();
-            Console.ReadLine();
+            while (true)
+            {
+                Authorization.RequestAuthorisation();
+                Console.ReadLine();
+            }
         }
     }
 }
